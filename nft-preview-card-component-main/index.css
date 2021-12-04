@@ -1,0 +1,147 @@
+:root {
+    --color--t:  hsl(215, 51%, 70%);
+    --color--f: hsl(178, 100%, 50%);
+    --color--h: hsl(0, 0%, 100%);
+    --color--db-m:hsl(217, 54%, 11%);
+    --color--db-c:hsl(216, 50%, 16%);
+    --color--db-l:hsl(215, 32%, 27%);
+    --color--i: hsla(178, 100%, 50%, 0.548);
+}
+
+/* color
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+*/
+
+html {
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+}
+
+body {
+    background-color: var(--color--db-m);
+}
+div {
+    font-size: 1rem;
+
+    background-color: var(--color--db-c);
+    width: 13em;
+    padding: 1em;
+    height: 25em;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    border-radius: 1em;
+    font-family: Outfit;
+}
+
+div > figure> img {
+    width: 13em;
+    border-radius: .5em;
+    margin-bottom: .3em;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+div > figure:hover img {
+    opacity: .5;
+}
+
+div > h2 {
+    font-size: .95em;
+    text-align: left;
+    color: var(--color--h);
+    margin-bottom: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+div > h2:hover{
+    color:var(--color--f);
+}
+
+div > p {
+    font-size: .85em;
+    text-align: left;
+    color: var(--color--t);
+    margin-bottom: 1em;
+}
+
+ div > article > p > img {
+    width: .5em;
+    margin-right: .1em;
+ }
+div > article > p {
+    font-size: .82em;
+    color:var(--color--f);
+    margin-bottom: 1em;
+}
+
+div > article > p > small > img {
+    position: relative;
+    bottom: -.4em;
+    width: 7.3%;
+    left: -.7em;
+}
+ small {
+     
+     margin-left: 6.7em;
+     color:var(--color--t);
+ }
+
+ div > a {
+    background-color: var(--color--t);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 1em;
+ }
+
+ div > profil > p > img:nth-child(1) {
+     position: relative;
+     width: 15%;
+     border: .1em var(--color--h);
+     bottom: -.5em;
+     margin-right: 0.8em;
+     
+
+ }
+
+ div > profil > p {
+     position: relative;
+    font-size: .9em;
+    top: 0em;
+ }
+
+ div > profil > p > span {
+     color: var(--color--h);
+    display: inline-block;
+    cursor: pointer;
+ }
+
+ div > profil > p > span:hover {
+    color: var(--color--f)
+}
+
+
+
+
+
+
+
+
+
